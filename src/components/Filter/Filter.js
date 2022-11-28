@@ -13,7 +13,7 @@ export const Filter = ({ labelText }) => {
       {labelText}
       <FilterInput
         onChange={e =>
-          dispatch(updateFilterValue(e.currentTarget.value.toLocaleLowerCase()))
+          dispatch(updateFilterValue(e.currentTarget.value.toLowerCase()))
         }
       ></FilterInput>
     </LabelWrap>
